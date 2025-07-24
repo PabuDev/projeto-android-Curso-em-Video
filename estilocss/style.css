@@ -5,7 +5,10 @@
     src: url(../fontes/idroid.otf) format('opentype');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url(../fontes/BebasNeue-Regular.ttf) format(truetype);
+}
 
 :root{
     --font-padrao: Arial, Verdana, sans-serif;
@@ -37,7 +40,7 @@ a.link-externos::after{
 /* Cabeçalho */
 
 header{
-    background-image: linear-gradient(180deg, var(--cor4), var(--cor5));
+    background-image: linear-gradient(180deg, var(--cor3), var(--cor5));
     min-height: 130px;
     text-align: center;
     padding-top: 40px; 
@@ -81,6 +84,7 @@ nav > a{
 nav > a:hover{
     background-color: var(--cor2);
     color: var(--cor4);
+    font-size: 1.1em;
 }
 
 main{
